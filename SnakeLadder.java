@@ -6,9 +6,6 @@ public class SnakeLadder {
 		int position=0;
 		System.out.println("Welcome into Snake & Ladder Program !!");
 		System.out.println("Your Starting Position Is : " +position);
-		Dice();
-	}
-	public static void Dice() {
 		int Dice = (int)Math.floor(Math.random()*10)%6+1;	
 		System.out.println("Your Dice Value is : " +Dice);
 	
