@@ -9,10 +9,15 @@ class Utility {
 			
 			switch (value) {
 			case 1:
+				
 				System.out.println("No Play You Are In Same Position");
 				break;
 			case 2:
 				position=(position+Dice);
+				if (position > 100) {
+					position = (position - Dice);
+					continue;
+				}
 				System.out.println("Your Position After Ladder Is : " +position );
 				break;
 			case 3:
@@ -25,6 +30,9 @@ class Utility {
 				System.out.println("Your position After Snake Is : " +position);
 				break;
 			
+			}
+			if (position==100) {
+				System.out.println("You Are Win : " +position);
 			}
 		}
 		
